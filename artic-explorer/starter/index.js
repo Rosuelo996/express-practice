@@ -127,15 +127,15 @@ app.post("/search", async (req, res) => {
     }
     })
 
-    const artwork = response.data.data
+    const artworks = response.data.data
 
     // 3. If no results, show message
-    if (artwork.length === 0) {
+    if (artworks.length === 0) {
       return res.send(page("Search failed", null, query))
     }
     
     // 4. Pick one artwork
-    const randomArtwork = pickRandom(artwork)
+    const randomArtwork = pickRandom(artworks)
 
     // 5. Save it to lastArtwork
     lastArtwork = cleanArtwork(response, randomArtwork)
@@ -157,8 +157,8 @@ app.get("/download/:type", (req, res) => {
   // If type is txt, download text.
   if (type === "txt") {
     const text = `
-    Title: ${lastArtwork.title},
-    Artist: ${lastArtwork.artist},
+    Title: ${lastArtwork.title}
+    Artist: ${lastArtwork.artist}
     Date: ${lastArtwork.date}
     Place: ${lastArtwork.place}
     Image: ${lastArtwork.imageUrl}
