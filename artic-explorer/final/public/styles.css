@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #05060b;
+  color: white;
+  margin: 0;
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+}
+
+button, a {
+  padding: 12px;
+  border-radius: 8px;
+  border: 0;
+  background: white;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.message {
+  background: #121827;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  background: #121827;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.image {
+  background: #999;
+  padding: 30px;
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+  max-height: 260px;
+}
+
+.info {
+  padding: 30px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+  form, .actions {
+    flex-direction: column;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+  }
+}
