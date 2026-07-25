@@ -1,0 +1,72 @@
+{
+  "recipes": [
+    {
+      "id": "chicken",
+      "name": "Chicken Taco",
+      "ingredients": {
+        "protein": {
+          "name": "Chicken",
+          "preparation": "Grilled"
+        },
+        "toppings": [
+          {
+            "quantity": "1/2 cup",
+            "name": "lettuce"
+          },
+          {
+            "quantity": "1/4 cup",
+            "name": "cheese"
+          },
+          {
+            "quantity": "2 tbsp",
+            "name": "guacamole"
+          }
+        ]
+      }
+    },
+    {
+      "id": "beef",
+      "name": "Beef Taco",
+      "ingredients": {
+        "protein": {
+          "name": "Beef",
+          "preparation": "Ground"
+        },
+        "toppings": [
+          {
+            "quantity": "1/4 cup",
+            "name": "onion"
+          },
+          {
+            "quantity": "1 tbsp",
+            "name": "cilantro"
+          },
+          {
+            "quantity": "1/4 cup",
+            "name": "cheddar"
+          }
+        ]
+      }
+    },
+    {
+      "id": "fish",
+      "name": "Fish Taco",
+      "ingredients": {
+        "protein": {
+          "name": "Fish",
+          "preparation": "Fried"
+        },
+        "toppings": [
+          {
+            "quantity": "1/2 cup",
+            "name": "cabbage"
+          },
+          {
+            "quantity": "1/2",
+            "name": "avocado"
+          }
+        ]
+      }
+    }
+  ]
+}
