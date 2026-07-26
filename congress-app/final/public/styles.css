@@ -1,0 +1,50 @@
+body {
+  font-family: system-ui, Arial, sans-serif;
+  background: #0b0c10;
+  color: #e9eef5;
+  margin: 0;
+}
+
+.wrap {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.search {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+select, input, button {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #2a2f3a;
+  background: #141824;
+  color: #e9eef5;
+}
+
+button {
+  cursor: pointer;
+}
+
+.message {
+  background: #141824;
+  border: 1px solid #2a2f3a;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.card {
+  background: #141824;
+  border: 1px solid #2a2f3a;
+  border-radius: 16px;
+  padding: 18px;
+  margin-top: 18px;
+}
+
+.footer {
+  margin-top: 30px;
+  opacity: 0.7;
+}
